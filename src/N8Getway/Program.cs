@@ -1,4 +1,7 @@
 
+using Ocelot.DependencyInjection;
+using Ocelot.Middleware;
+
 namespace N8Getway
 {
     public class Program
@@ -6,17 +9,17 @@ namespace N8Getway
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
-            // Add services to the container.
+            builder.Configuration.SetBasePath(builder.Environment.ContentRootPath)
+    .AddJsonFile("ocelot.json", optional: false, reloadOnChange: true);
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddOcelot();
+
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -29,6 +32,9 @@ namespace N8Getway
 
 
             app.MapControllers();
+
+            app.UseOcelot().Wait();
+
 
             app.Run();
         }
