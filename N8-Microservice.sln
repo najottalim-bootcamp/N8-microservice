@@ -7,9 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{16757ABF-BBE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project.1", "Project.1", "{A045540F-E550-4834-9BC8-3A6D5F6DEB1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N8Getway", "src\N8Getway\N8Getway.csproj", "{B57FEF2A-1400-49EC-AE46-78972724BD26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N8Getway", "src\N8Getway\N8Getway.csproj", "{B57FEF2A-1400-49EC-AE46-78972724BD26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project1.WebApi", "src\Project1.WebApi\Project1.WebApi.csproj", "{06ECED71-76A9-4646-AECB-FBD79728B59A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project1.WebApi", "src\Project1.WebApi\Project1.WebApi.csproj", "{06ECED71-76A9-4646-AECB-FBD79728B59A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project.2", "Project.2", "{422F9F2B-D7F7-421A-9EEB-23B1EE975963}"
 	ProjectSection(SolutionItems) = preProject
@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project.3", "Project.3", "{
 	ProjectSection(SolutionItems) = preProject
 		islombek.json = islombek.json
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project2.Api", "src\Project2.Api\Project2.Api.csproj", "{54919D27-EBA6-42C4-BBD7-162B90573F66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{06ECED71-76A9-4646-AECB-FBD79728B59A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06ECED71-76A9-4646-AECB-FBD79728B59A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06ECED71-76A9-4646-AECB-FBD79728B59A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54919D27-EBA6-42C4-BBD7-162B90573F66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54919D27-EBA6-42C4-BBD7-162B90573F66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54919D27-EBA6-42C4-BBD7-162B90573F66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54919D27-EBA6-42C4-BBD7-162B90573F66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +51,7 @@ Global
 		{06ECED71-76A9-4646-AECB-FBD79728B59A} = {A045540F-E550-4834-9BC8-3A6D5F6DEB1E}
 		{422F9F2B-D7F7-421A-9EEB-23B1EE975963} = {16757ABF-BBE3-4D3E-BACE-5BB5F15D6F37}
 		{30E02352-29FD-4261-94CC-042A3033C7C8} = {16757ABF-BBE3-4D3E-BACE-5BB5F15D6F37}
+		{54919D27-EBA6-42C4-BBD7-162B90573F66} = {422F9F2B-D7F7-421A-9EEB-23B1EE975963}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0E01A10-002F-41AB-B56F-0B4EC0771B49}
